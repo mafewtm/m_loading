@@ -13,6 +13,7 @@
     "@mantine/core": "^7.3.2",
     "@mantine/hooks": "^7.3.2",
     "@mantine/nprogress": "^7.3.2",
+    "@tabler/icons-react": "^2.44.0",
     "postcss": "^8.4.32",
     "postcss-preset-mantine": "^1.12.2",
     "postcss-simple-vars": "^7.0.1",

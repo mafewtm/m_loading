@@ -68,6 +68,12 @@ a:hover {
     color: $colorSecondary;
 }
 
+.mute {
+    position: fixed !important;
+    bottom: 1vh;
+    right : 1vh;
+}
+
 .title {
     display: block;
     position: relative;
