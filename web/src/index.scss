@@ -8,7 +8,7 @@ $colorTextLight: #FFFFFF;
 
     color-scheme: light dark;
     color: $colorTextLight;
-    background-color: $colorPrimary;
+    background: none !important;
     user-select: none;
     overflow: hidden !important;
 

@@ -3,15 +3,16 @@ import ReactDOM from 'react-dom/client';
 import { createTheme, MantineProvider } from '@mantine/core';
 import App from './App';
 import './index.scss';
+import "@mantine/core/styles.css";
 
-const theme = createTheme({
-  /** Put your mantine theme override here */
+export const theme = createTheme({
+  fontFamilyMonospace: 'Roboto',
 });
 
 const root = document.getElementById('root');
 ReactDOM.createRoot(root!).render(
   <React.StrictMode>
-    <MantineProvider theme={theme}>
+    <MantineProvider defaultColorScheme="dark" theme={theme}>
       <App />
     </MantineProvider>
   </React.StrictMode>
