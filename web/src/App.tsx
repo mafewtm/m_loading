@@ -1,5 +1,5 @@
 import React from 'react'
-import Video from './components/Video'
+import Media from './components/Media'
 import Progress from './components/Progress';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       <div className="description">
         <h2>Server Description</h2>
       </div>
-      <Video />
+      <Media />
     </React.StrictMode>
   );
 }
