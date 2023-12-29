@@ -15,4 +15,4 @@ pnpm build
 ![image](https://github.com/MafewTM/m_loading/assets/22198949/da4b1765-6661-41ab-8c80-50292954a07b)
 
 I know this video has been used in plenty of loading screens. It's just a placeholder
-###### *Video credit to [Warraa_](https://www.youtube.com/watch?v=DAQYMyzE8ww)*
+###### *Video credit to [Warraa_](https://www.youtube.com/watch?v=DAQYMyzE8ww) and song credit to [Letoa](https://www.youtube.com/watch?v=BV8dYT-faFM)*
