@@ -8,23 +8,24 @@ function Media() {
   const [muted, setMuted] = useState(false);
 
   const toggleMute = () => {
-    const audio = document.getElementById('audioElement') as HTMLMediaElement | null;
+    const audio = document.getElementById('audioElement') as HTMLAudioElement | null;
+  
     if (audio) {
       audio.muted = !audio.muted;
-      setMuted(!muted);
+      setMuted(audio.muted); // assuming setMuted is a function that takes a boolean as an argument
     }
   };
   return (
     <React.StrictMode>
       <div id="video">
-        <video loop autoPlay muted>
+        <video loop autoPlay muted preload="auto">
           <source src={Clip} type="video/mp4" />
         </video>
         <audio id="audioElement" loop autoPlay hidden>
           <source src={Sound} type="audio/mp3" />
         </audio>
       </div>
-      <ActionIcon classNames={{root: 'mute'}} variant="default" color="rgba(43, 43, 43, 0.08)" size="lg" aria-label="Mute" onClick={toggleMute}>
+      <ActionIcon classNames={{root: 'mute'}} variant="subtle" size="lg" color = "cyan" aria-label="Mute" onClick={toggleMute}>
         {muted ? <IconVolumeOff style={{ width: '70%', height: '70%' }} /> : <IconVolume style={{ width: '70%', height: '70%' }} />}
       </ActionIcon>
     </React.StrictMode>
