@@ -25,7 +25,7 @@ function Media() {
           <source src={Sound} type="audio/mp3" />
         </audio>
       </div>
-      <ActionIcon classNames={{root: 'mute'}} variant="subtle" size="lg" color = "cyan" aria-label="Mute" onClick={toggleMute}>
+      <ActionIcon classNames={{root: 'mute'}} variant="light" size="lg" color = "cyan" aria-label="Mute" onClick={toggleMute}>
         {muted ? <IconVolumeOff style={{ width: '70%', height: '70%' }} /> : <IconVolume style={{ width: '70%', height: '70%' }} />}
       </ActionIcon>
     </React.StrictMode>
