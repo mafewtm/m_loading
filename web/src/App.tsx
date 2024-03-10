@@ -1,16 +1,15 @@
 import React from 'react'
 import Media from './components/Media'
+import { Box, Title, Text } from "@mantine/core";
+import classes from './index.module.css';
 
 function App() {
   return (
     <React.StrictMode>
-      <Progress />
-      <div className="title">
-        <h1>Server Name</h1>
-      </div>
-      <div className="description">
-        <h2>Server Description</h2>
-      </div>
+      <Box className={classes.container}>
+        <Title className={classes.title}>Server Name</Title>
+        <Text className={classes.description}>Server Description</Text>
+      </Box>
       <Media />
     </React.StrictMode>
   );
