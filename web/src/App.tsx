@@ -3,7 +3,7 @@ import Media from './components/Media'
 import { Box, Title, Text } from "@mantine/core";
 import classes from './index.module.css';
 
-function App() {
+export default function App() {
   return (
     <React.StrictMode>
       <Box className={classes.container}>
@@ -14,5 +14,3 @@ function App() {
     </React.StrictMode>
   );
 }
-
-export default App
