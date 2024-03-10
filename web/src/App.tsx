@@ -1,6 +1,5 @@
 import React from 'react'
 import Media from './components/Media'
-import Progress from './components/Progress';
 
 function App() {
   return (
