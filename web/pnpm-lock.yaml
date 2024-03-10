@@ -2245,6 +2245,7 @@ packages:
       '@types/node': ^18.0.0 || >=20.0.0
       less: '*'
       lightningcss: ^1.21.0
+      sass: '*'
       stylus: '*'
       sugarss: '*'
       terser: ^5.4.0
@@ -2254,6 +2255,8 @@ packages:
       less:
         optional: true
       lightningcss:
+        optional: true
+      sass:
         optional: true
       stylus:
         optional: true
