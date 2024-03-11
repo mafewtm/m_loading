@@ -5,7 +5,7 @@
   "type": "module",
   "homepage": "web/build",
   "scripts": {
-    "start": "vite",
+    "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
@@ -15,10 +15,8 @@
     "@mantine/hooks": "^7.6.1",
     "@mantine/nprogress": "^7.6.1",
     "@tabler/icons-react": "^3.0.0",
+    "embla-carousel-autoplay": "7.1.0",
     "embla-carousel-react": "8.0.0",
-    "postcss": "^8.4.35",
-    "postcss-preset-mantine": "^1.13.0",
-    "postcss-simple-vars": "^7.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -31,6 +29,9 @@
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+    "postcss": "^8.4.35",
+    "postcss-preset-mantine": "^1.13.0",
+    "postcss-simple-vars": "^7.0.1",
     "typescript": "^5.4.2",
     "vite": "^5.1.5"
   }

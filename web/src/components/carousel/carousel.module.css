@@ -1,0 +1,9 @@
+.container {
+    height: 100%;
+    display: flex;
+    opacity: 0.6;
+}
+
+.carousel {
+    flex: 1;
+}

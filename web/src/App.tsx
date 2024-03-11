@@ -1,16 +1,16 @@
-import React from 'react'
-import Media from './components/Media'
-import { Box, Title, Text } from "@mantine/core";
+import { Box, Stack, Title } from "@mantine/core";
 import classes from './index.module.css';
+import Media from './components/media/Media'
+import Carousel from './components/carousel/Carousel'
 
 export default function App() {
   return (
-    <React.StrictMode>
-      <Box className={classes.container}>
-        <Title className={classes.title}>Server Name</Title>
-        <Text className={classes.description}>Server Description</Text>
-      </Box>
+    <Box className={classes.container}>
+      <Stack className={classes.main}>
+        <Title order={1} className={classes.title}>Server Name</Title>
+      </Stack>
+      <Carousel />
       <Media />
-    </React.StrictMode>
+    </Box>
   );
 }
