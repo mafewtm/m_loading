@@ -4,6 +4,9 @@
 
 Just a simple loading screen built using React and Typescript w/ Mantine
 
+## Dependencies
+- [ox_lib](https://github.com/overextended/ox_lib) (For version checking)
+
 ## How to build
 ```
 cd ./web

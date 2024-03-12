@@ -21,5 +21,7 @@ loadscreen 'web/build/index.html'
 loadscreen_cursor 'yes'
 loadscreen_manual_shutdown 'yes'
 
+dependency 'ox_lib'
+
 lua54 'yes'
 use_experimental_fxv2_oal 'yes'
