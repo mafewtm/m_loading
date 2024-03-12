@@ -1,22 +1,16 @@
 fx_version 'cerulean'
 game 'gta5'
 
-author 'MafewTM'
+author 'mafewtm'
 description 'm_loading'
 repository 'https://github.com/MafewTM/m_loading'
 version '1.0.0'
 
-shared_scripts {
-	'@ox_lib/init.lua',
-}
+shared_script '@ox_lib/init.lua'
 
-client_scripts {
-	'client/main.lua'
-}
+client_script 'client/main.lua'
 
-server_script {
-	'server/main.lua'
-}
+server_script 'server/main.lua'
 
 files {
 	'web/build/index.html',
