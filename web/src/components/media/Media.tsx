@@ -4,34 +4,34 @@ import Sound from '../../assets/audio.mp3'
 import { IconVolume, IconVolumeOff } from '@tabler/icons-react';
 import classes from './media.module.css';
 
-function Media() {
+export default function Media() {
   const [muted, setMuted] = useState(false);
+
+  useEffect(() => {
+    const isMuted = localStorage.getItem('isMuted');
+
+    if (isMuted !== null) {
+      const mutedValue = JSON.parse(isMuted);
+      setMuted(mutedValue);
+
+      const audio = document.getElementById('audioElement') as HTMLAudioElement | null;
+      if (audio) {
+        audio.muted = mutedValue;
+      }
+    }
+  }, []);
 
   const toggleMute = () => {
     const audio = document.getElementById('audioElement') as HTMLAudioElement | null;
-  
+
     if (audio) {
       audio.muted = !audio.muted;
-      setMuted(audio.muted); // assuming setMuted is a function that takes a boolean as an argument
- 
-      // Save the mute state to localStorage
+      setMuted(audio.muted);
+
       localStorage.setItem('isMuted', JSON.stringify(audio.muted));
     }
-  
-    useEffect(() => {
-      const audio = document.getElementById('audioElement') as HTMLAudioElement | null;
-   
-      if (audio) {
-        // Get the mute state from localStorage
-        const isMuted = localStorage.getItem('isMuted');
-   
-        if (isMuted !== null) {
-          audio.muted = JSON.parse(isMuted);
-          setMuted(audio.muted); // assuming setMuted is a function that takes a boolean as an argument
-        }
-      }
-    }, []);
- };
+  };
+
   return (
     <React.StrictMode>
       <Box className={classes.container}>
@@ -46,5 +46,3 @@ function Media() {
     </React.StrictMode>
   );
 }
-
-export default Media
