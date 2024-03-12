@@ -7,10 +7,10 @@ import classes from './carousel.module.css';
 export default function Media() {
   const autoplay = useRef(Autoplay({ delay: 5000 }));
   const images = [
-    'https://github.com/MafewTM/m_loading/blob/99f31f0d78d0a45e849202da98f73cd40757da7a/web/src/assets/images/1.png',
-    'https://github.com/MafewTM/m_loading/blob/99f31f0d78d0a45e849202da98f73cd40757da7a/web/src/assets/images/2.png',
-    'https://github.com/MafewTM/m_loading/blob/99f31f0d78d0a45e849202da98f73cd40757da7a/web/src/assets/images/3.png',
-    'https://github.com/MafewTM/m_loading/blob/99f31f0d78d0a45e849202da98f73cd40757da7a/web/src/assets/images/4.png',
+    'https://raw.githubusercontent.com/MafewTM/m_loading/main/web/src/assets/images/1.png',
+    'https://raw.githubusercontent.com/MafewTM/m_loading/main/web/src/assets/images/2.png',
+    'https://raw.githubusercontent.com/MafewTM/m_loading/main/web/src/assets/images/3.png',
+    'https://raw.githubusercontent.com/MafewTM/m_loading/main/web/src/assets/images/4.png',
   ];
 
   const slides = images.map((url) => (

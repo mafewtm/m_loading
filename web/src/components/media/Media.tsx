@@ -1,6 +1,6 @@
 import React , { useEffect, useState }from 'react'
 import { ActionIcon, Box } from '@mantine/core';
-import Sound from '/src/assets/audio.mp3'
+import Sound from '../../assets/audio.mp3'
 import { IconVolume, IconVolumeOff } from '@tabler/icons-react';
 import classes from './media.module.css';
 
