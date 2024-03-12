@@ -13,8 +13,8 @@
 
 .mute {
     position: fixed !important;
-    bottom: 1vh;
-    right : 1vh;
+    bottom: 3vh;
+    right : 3vh;
 }
 
 .muteIcon {
