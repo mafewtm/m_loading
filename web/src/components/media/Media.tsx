@@ -1,4 +1,4 @@
-import React , { useEffect, useState }from 'react'
+import { useEffect, useState }from 'react'
 import { ActionIcon, Box } from '@mantine/core';
 import Sound from '../../assets/audio.mp3'
 import { IconVolume, IconVolumeOff } from '@tabler/icons-react';
@@ -33,7 +33,7 @@ export default function Media() {
   };
 
   return (
-    <React.StrictMode>
+    <div>
       <Box className={classes.container}>
         <audio id="audioElement" loop autoPlay hidden>
           <source src={Sound} type="audio/mp3" />
@@ -43,6 +43,6 @@ export default function Media() {
       <ActionIcon className={classes.mute} variant="subtle" size="lg" color = "gray" aria-label="Mute" onClick={toggleMute}>
         {muted ? <IconVolumeOff className={classes.muteIcon} /> : <IconVolume className={classes.muteIcon} />}
       </ActionIcon>
-    </React.StrictMode>
+    </div>
   );
 }

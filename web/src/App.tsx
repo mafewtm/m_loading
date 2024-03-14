@@ -1,7 +1,7 @@
 import { Box, Stack, Title } from "@mantine/core";
 import classes from './index.module.css';
-import Media from './components/media/Media'
-import Carousel from './components/carousel/Carousel'
+import Media from './components/media/Media';
+import Carousel from './components/carousel/Carousel';
 
 export default function App() {
   return (
