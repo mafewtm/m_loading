@@ -1,4 +1,4 @@
-import { Box, Stack, Title } from "@mantine/core";
+import { Box, Stack, Title } from '@mantine/core';
 import classes from './index.module.css';
 import Media from './components/media/Media';
 import Carousel from './components/carousel/Carousel';
