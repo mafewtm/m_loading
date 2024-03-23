@@ -1,1 +1,1 @@
-lib.versionCheck('MafewTM/m_loading')
+lib.versionCheck('mafewtm/m_loading')
