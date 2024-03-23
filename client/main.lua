@@ -1,8 +1,8 @@
 local checkState = false
 
-AddEventHandler('playerSpawned', function ()
-    if not checkState then
-        ShutdownLoadingScreenNui()
-        checkState = true
-    end
+AddEventHandler('playerSpawned', function()
+    if checkState then return end
+
+    ShutdownLoadingScreenNui()
+    checkState = true
 end)
