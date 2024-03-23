@@ -3,7 +3,7 @@ game 'gta5'
 
 author 'mafewtm'
 description 'm_loading'
-repository 'https://github.com/MafewTM/m_loading'
+repository 'https://github.com/mafewtm/m_loading'
 version '1.0.0'
 
 shared_script '@ox_lib/init.lua'
