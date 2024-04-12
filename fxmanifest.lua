@@ -2,7 +2,8 @@ fx_version 'cerulean'
 game 'gta5'
 
 author 'mafewtm'
-description 'm_loading'
+name 'm_loading'
+description 'Just a simple React loading screen'
 repository 'https://github.com/mafewtm/m_loading'
 version '1.0.0'
 
