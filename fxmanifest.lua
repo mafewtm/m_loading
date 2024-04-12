@@ -5,7 +5,7 @@ author 'mafewtm'
 name 'm_loading'
 description 'Just a simple React loading screen'
 repository 'https://github.com/mafewtm/m_loading'
-version '1.0.0'
+version '1.1.0'
 
 shared_script '@ox_lib/init.lua'
 
