@@ -9,8 +9,6 @@ version '1.1.0'
 
 shared_script '@ox_lib/init.lua'
 
-client_script 'client/main.lua'
-
 server_script 'server/main.lua'
 
 files {
@@ -21,8 +19,6 @@ files {
 loadscreen 'web/build/index.html'
 loadscreen_cursor 'yes'
 loadscreen_manual_shutdown 'yes'
-
-dependency 'ox_lib'
 
 lua54 'yes'
 use_experimental_fxv2_oal 'yes'
