@@ -21,7 +21,7 @@ export default function Media() {
 
   return (
     <div className={classes.container}>
-      <Carousel className={classes.carousel} slideSize='100%' plugins={[autoplay.current]} loop draggable={false} withControls={false}>
+      <Carousel className={classes.carousel} slideSize='100%' plugins={[autoplay.current]} draggable={false} withControls={false} loop >
         {slides}
       </Carousel>
     </div>
