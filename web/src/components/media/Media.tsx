@@ -34,12 +34,12 @@ export default function Media() {
 
   return (
     <div>
-      <Box className={classes.container}>
+      <Box>
         <audio id='audioElement' loop autoPlay hidden>
           <source src={Sound} type='audio/mp3' />
         </audio>
       </Box>
-      
+
       <ActionIcon className={classes.mute} variant='subtle' size='lg' color = 'gray' aria-label='Mute' onClick={toggleMute}>
         {muted ? <IconVolumeOff className={classes.muteIcon} /> : <IconVolume className={classes.muteIcon} />}
       </ActionIcon>
