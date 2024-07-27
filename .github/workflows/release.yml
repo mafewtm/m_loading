@@ -61,8 +61,6 @@ jobs:
         with:
           add: fxmanifest.lua
           push: true
-          author_name: Manifest Bumper
-          author_email: 41898282+github-actions[bot]@users.noreply.github.com
           message: 'chore: bump manifest version to ${{ github.ref_name }}'
 
       - name: Update tag ref
@@ -72,12 +70,11 @@ jobs:
 
       - name: Bundle files
         run: |
-          mkdir -p ./temp/ox_lib
-          mkdir -p ./temp/ox_lib/web/
-          cp ./{LICENSE,README.md,fxmanifest.lua,init.lua} ./temp/ox_lib
-          cp -r ./{imports,resource,locales} ./temp/ox_lib
-          cp -r ./web/build ./temp/ox_lib/web/
-          cd ./temp && zip -r ../ox_lib.zip ./ox_lib
+          mkdir -p ./temp/m_loading
+          mkdir -p ./temp/m_loading/web/
+          cp ./{LICENSE,README.md,fxmanifest.lua} ./temp/m_loading
+          cp -r ./web/build ./temp/m_loading/web/
+          cd ./temp && zip -r ../m_loading.zip ./m_loading
 
       - name: Create Release
         uses: 'marvinpinto/action-automatic-releases@v1.2.1'
@@ -86,7 +83,7 @@ jobs:
           repo_token: '${{ secrets.GITHUB_TOKEN }}'
           title: ${{ env.RELEASE_VERSION }}
           prerelease: false
-          files: ox_lib.zip
+          files: m_loading.zip
 
         env:
           CI: false
