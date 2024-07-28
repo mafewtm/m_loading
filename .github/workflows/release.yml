@@ -69,13 +69,6 @@ jobs:
           cp -r ./web/build ./temp/m_loading/web/
           cd ./temp && zip -r ../m_loading.zip ./m_loading
 
-      - name: Publish npm package
-        uses: JS-DevTools/npm-publish@v1
-        with:
-          token: ${{ secrets.NPM_TOKEN }}
-          package: './package.json'
-          access: 'public'
-
       - name: Create Release
         uses: 'marvinpinto/action-automatic-releases@v1.2.1'
         id: auto_release
