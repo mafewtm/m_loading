@@ -44,10 +44,6 @@ jobs:
         env:
           CI: false
 
-      - name: Bump package version
-        run: pnpm version ${{ github.ref_name }}
-        working-directory: package
-
       - name: Bump manifest version
         run: node .github/actions/bump-manifest-version.js
         env:
