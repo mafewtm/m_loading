@@ -7,7 +7,7 @@ description 'Just a simple React loading screen'
 repository 'https://github.com/mafewtm/m_loading'
 
 shared_script '@ox_lib/init.lua'
-version '1.1.0'
+version '1.2.0'
 
 server_script 'server/main.lua'
 
