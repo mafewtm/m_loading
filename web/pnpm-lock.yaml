@@ -23,11 +23,14 @@ importers:
       '@tabler/icons-react':
         specifier: ^3.2.0
         version: 3.2.0(react@18.2.0)
+      embla-carousel:
+        specifier: ^7.1.0
+        version: 7.1.0
       embla-carousel-autoplay:
-        specifier: 8.0.2
-        version: 8.0.2(embla-carousel@8.0.2)
+        specifier: ^7.1.0
+        version: 7.1.0(embla-carousel@7.1.0)
       embla-carousel-react:
-        specifier: 7.1.0
+        specifier: ^7.1.0
         version: 7.1.0(react@18.2.0)
       react:
         specifier: ^18.2.0
@@ -748,10 +751,10 @@ packages:
   electron-to-chromium@1.4.735:
     resolution: {integrity: sha512-pkYpvwg8VyOTQAeBqZ7jsmpCjko1Qc6We1ZtZCjRyYbT5v4AIUKDy5cQTRotQlSSZmMr8jqpEt6JtOj5k7lR7A==}
 
-  embla-carousel-autoplay@8.0.2:
-    resolution: {integrity: sha512-31lBigAkHeI4k1767uYcr9Gm2y12mzLpVsi+QRxIWQT8J4AtRoHLOhd8YJFiXf22DbI/j78+IaeJK4lZRlFxUw==}
+  embla-carousel-autoplay@7.1.0:
+    resolution: {integrity: sha512-nYfgSGn3ek44OzwO0t/Ptuxq4PNPD5l7Y9X7JjLYI/DN1uGjqxz9L73YYqR6YCRDnTYJ88s9fep48dzBnSG4vQ==}
     peerDependencies:
-      embla-carousel: 8.0.2
+      embla-carousel: 7.1.0
 
   embla-carousel-react@7.1.0:
     resolution: {integrity: sha512-tbYRPRZSDNd2QLNqYDcArAakGIxtUbhS7tkP0dGXktXHGgcX+3ji3VrOUTOftBiujZrMV8kRxtrRUe/1soloIQ==}
@@ -760,9 +763,6 @@ packages:
 
   embla-carousel@7.1.0:
     resolution: {integrity: sha512-Bh8Pa8NWzgugLkf8sAGexQlBCNDFaej5BXiKgQdRJ1mUC9NWBrw9Z23YVPVGkguWoz5LMjZXXFVGCobl3UPt/Q==}
-
-  embla-carousel@8.0.2:
-    resolution: {integrity: sha512-bogsDO8xosuh/l3PxIvA5AMl3+BnRVAse9sDW/60amzj4MbGS5re4WH5eVEXiuH8G1/3G7QUAX2QNr3Yx8z5rA==}
 
   esbuild@0.20.2:
     resolution: {integrity: sha512-WdOOppmUNU+IbZ0PaDiTst80zjnrOkyJNHoKupIcVyU8Lvla3Ugx94VzkQ32Ijqd7UhHJy75gNWDMUekcrSJ6g==}
@@ -2015,9 +2015,9 @@ snapshots:
 
   electron-to-chromium@1.4.735: {}
 
-  embla-carousel-autoplay@8.0.2(embla-carousel@8.0.2):
+  embla-carousel-autoplay@7.1.0(embla-carousel@7.1.0):
     dependencies:
-      embla-carousel: 8.0.2
+      embla-carousel: 7.1.0
 
   embla-carousel-react@7.1.0(react@18.2.0):
     dependencies:
@@ -2025,8 +2025,6 @@ snapshots:
       react: 18.2.0
 
   embla-carousel@7.1.0: {}
-
-  embla-carousel@8.0.2: {}
 
   esbuild@0.20.2:
     optionalDependencies:
