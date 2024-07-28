@@ -66,6 +66,7 @@ jobs:
           mkdir -p ./temp/m_loading
           mkdir -p ./temp/m_loading/web/
           cp ./{LICENSE,README.md,fxmanifest.lua} ./temp/m_loading
+          cp -r ./server ./temp/m_loading
           cp -r ./web/build ./temp/m_loading/web/
           cd ./temp && zip -r ../m_loading.zip ./m_loading
 
