@@ -1,14 +1,13 @@
 fx_version 'cerulean'
 game 'gta5'
-version '1.2.0'
 
 author 'mafewtm'
 name 'm_loading'
 description 'Just a simple React loading screen'
 repository 'https://github.com/mafewtm/m_loading'
+version '1.2.0'
 
 shared_script '@ox_lib/init.lua'
-version '1.2.0'
 
 server_script 'server/main.lua'
 
