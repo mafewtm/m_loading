@@ -13,8 +13,8 @@ export default function Media() {
     'https://raw.githubusercontent.com/mafewtm/m_loading/main/web/src/assets/images/4.png',
   ];
 
-  const slides = images.map((url) => (
-    <Carousel.Slide key={url}>
+  const slides = images.map((url, index) => (
+    <Carousel.Slide key={index}>
       <Image src={url} />
     </Carousel.Slide>
   ));
