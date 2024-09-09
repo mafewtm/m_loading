@@ -1,7 +1,7 @@
 import { useEffect, useState }from 'react'
 import { ActionIcon, Box } from '@mantine/core';
 import Sound from '../../assets/audio.mp3'
-import { IconVolume, IconVolumeOff } from '@tabler/icons-react';
+import { Icon } from '@iconify/react';
 import classes from './media.module.css';
 
 export default function Media() {
@@ -41,7 +41,7 @@ export default function Media() {
       </Box>
 
       <ActionIcon className={classes.mute} variant='subtle' size='lg' color = 'gray' aria-label='Mute' onClick={toggleMute}>
-        {muted ? <IconVolumeOff className={classes.muteIcon} /> : <IconVolume className={classes.muteIcon} />}
+        {muted ? <Icon icon='hugeicons:volume-off' className={classes.muteIcon} /> : <Icon icon='hugeicons:volume-high' className={classes.muteIcon} />}
       </ActionIcon>
     </div>
   );
