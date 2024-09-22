@@ -5,12 +5,8 @@ import Carousel from './components/carousel/Carousel';
 import { nprogress, NavigationProgress } from '@mantine/nprogress';
 
 const handlers = {
-  loadProgress(data : { loadFraction: number }) {
-    if (data.loadFraction === 1) {
-      nprogress.complete()
-    } else {
-      nprogress.set(data.loadFraction * 100);
-    }
+  loadProgress(data: { loadFraction: number }) {
+    data.loadFraction === 1 ? nprogress.complete() : nprogress.set(data.loadFraction * 100);
   }
 };
 
