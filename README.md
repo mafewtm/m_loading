@@ -1,11 +1,11 @@
 # m_loading
 
-Just a simple React Typescript loading screen utilizing Mantine UI
+Just a simple React Typescript loading screen utilizing shadcn/ui and tailwind
 
 ## How to build
 
 ```
-cd ./web
+cd web
 pnpm i
 pnpm build
 ```
