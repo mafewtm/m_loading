@@ -1,28 +1,30 @@
-import { Box, Stack, Title } from '@mantine/core';
-import classes from './index.module.css';
+import { useState } from 'react';
 import Media from './components/media/Media';
 import Carousel from './components/carousel/Carousel';
-import { nprogress, NavigationProgress } from '@mantine/nprogress';
-
-const handlers = {
-  loadProgress(data: { loadFraction: number }) {
-    data.loadFraction === 1 ? nprogress.complete() : nprogress.set(data.loadFraction * 100);
-  }
-};
-
-window.addEventListener('message', function(event) {
-  handlers[event.data.eventName as keyof typeof handlers]?.(event.data);
-});
+import { Progress } from '@/components/ui/progress';
 
 export default function App() {
+  const [progress, setProgress] = useState(20);
+  const handlers = {
+    loadProgress(data: { loadFraction: number }) {
+      data.loadFraction === 1 ? setProgress(100) : setProgress(data.loadFraction * 100);
+    }
+  };
+
+  window.addEventListener('message', function(event) {
+    handlers[event.data.eventName as keyof typeof handlers]?.(event.data);
+  });
+
   return (
-    <Box className={classes.container}>
-      <Stack className={classes.main}>
-        <Title order={1} className={classes.title}>Server Name</Title>
-      </Stack>
-      <Carousel />
+    <div className='flex h-full w-full items-center justify-center bg-neutral-800'>
+      <div className='absolute z-10'>
+        <h1 className='text-9.5xl text-text1 font-bold leading-5 tracking-tight uppercase text-center drop-shadow-lg'>Server Name</h1>
+      </div>
+
       <Media />
-      <NavigationProgress />
-    </Box>
+      <Carousel />
+
+      <Progress className='h-1 absolute z-10 top-0 bg-transparent' value={progress} />
+    </div>
   );
 }

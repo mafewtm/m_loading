@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/carousel/carousel.tsx","./src/components/media/media.tsx","./src/components/ui/button.tsx","./src/components/ui/carousel.tsx","./src/components/ui/progress.tsx","./src/lib/utils.ts"],"version":"5.6.2"}

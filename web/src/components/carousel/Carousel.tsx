@@ -1,11 +1,13 @@
 import { useRef } from 'react';
+import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel'
 import Autoplay from 'embla-carousel-autoplay';
-import { Carousel } from '@mantine/carousel';
-import { Image } from '@mantine/core';
-import classes from './carousel.module.css';
 
 export default function Media() {
-  const autoplay = useRef(Autoplay({ delay: 5000 }));
+  const autoplay = useRef(Autoplay({
+    delay: 5000,
+    stopOnInteraction: false
+  }));
+
   const images = [
     'https://raw.githubusercontent.com/mafewtm/m_loading/main/web/src/assets/images/1.png',
     'https://raw.githubusercontent.com/mafewtm/m_loading/main/web/src/assets/images/2.png',
@@ -14,15 +16,20 @@ export default function Media() {
   ];
 
   const slides = images.map((url, index) => (
-    <Carousel.Slide key={index}>
-      <Image src={url} />
-    </Carousel.Slide>
+    <CarouselItem key={index}>
+      <img src={url} />
+    </CarouselItem>
   ));
 
   return (
-    <div className={classes.container}>
-      <Carousel className={classes.carousel} plugins={[autoplay.current]} draggable={false} loop withControls={false}>
-        {slides}
+    <div className='flex opacity-60'>
+      <Carousel
+        className='flex-1'
+        plugins = {[autoplay.current]}
+      >
+        <CarouselContent>
+          {slides}
+        </CarouselContent>
       </Carousel>
     </div>
   );

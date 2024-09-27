@@ -1,8 +1,8 @@
 import { useEffect, useState }from 'react'
-import { ActionIcon, Box } from '@mantine/core';
+import { Button } from '@/components/ui/button'
+
 import Sound from '../../assets/audio.mp3'
 import { Icon } from '@iconify/react';
-import classes from './media.module.css';
 
 export default function Media() {
   const [muted, setMuted] = useState(false);
@@ -34,15 +34,15 @@ export default function Media() {
 
   return (
     <div>
-      <Box>
+      <div>
         <audio id='audioElement' loop autoPlay hidden>
           <source src={Sound} type='audio/mp3' />
         </audio>
-      </Box>
+      </div>
 
-      <ActionIcon className={classes.mute} variant='subtle' size='lg' color = 'gray' aria-label='Mute' onClick={toggleMute}>
-        {muted ? <Icon icon='hugeicons:volume-off' className={classes.muteIcon} /> : <Icon icon='hugeicons:volume-high' className={classes.muteIcon} />}
-      </ActionIcon>
+      <Button variant='ghost' className='absolute bottom-12 right-12 hover:bg-zinc-300/20 z-10' size='icon'onClick={toggleMute}>
+        {muted ? <Icon icon='hugeicons:volume-off' className='h-6 w-6 text-zinc-300' /> : <Icon icon='hugeicons:volume-high' className='h-6 w-6 text-zinc-300' />}
+      </Button>
     </div>
   );
 }

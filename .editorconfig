@@ -6,15 +6,7 @@ insert_final_newline = false
 indent_style = space
 charset = utf-8
 trim_trailing_whitespace = true
-
-[*.lua]
 indent_size = 4
 
-[*.{html, css, json, js, ts}]
-indent_size = 2
-
-[*.tsx]
-indent_size = 2
-
-[*.module.css]
+[*.{sql,html,css,json,js,ts,jsx,tsx}]
 indent_size = 2
