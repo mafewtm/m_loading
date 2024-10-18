@@ -41,7 +41,7 @@ export default function Media() {
       </div>
 
       <Button variant='ghost' className='absolute bottom-12 right-12 hover:bg-zinc-300/20 z-10' size='icon'onClick={toggleMute}>
-        {muted ? <Icon icon='hugeicons:volume-off' className='h-6 w-6 text-zinc-300' /> : <Icon icon='hugeicons:volume-high' className='h-6 w-6 text-zinc-300' />}
+        <Icon icon={muted ? 'hugeicons:volume-off' : 'hugeicons:volume-high'} className = 'h-6 w-6 text-zinc-300' />
       </Button>
     </div>
   );
