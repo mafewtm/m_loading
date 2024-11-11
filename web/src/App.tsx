@@ -4,7 +4,7 @@ import Carousel from './components/carousel/Carousel';
 import { Progress } from '@/components/ui/progress';
 
 export default function App() {
-  const [progress, setProgress] = useState(20);
+  const [progress, setProgress] = useState(30);
   const handlers = {
     loadProgress(data: { loadFraction: number }) {
       data.loadFraction === 1 ? setProgress(100) : setProgress(data.loadFraction * 100);
@@ -24,7 +24,7 @@ export default function App() {
       <Media />
       <Carousel />
 
-      <Progress className='h-1 absolute z-10 top-0 bg-transparent' value={progress} />
+      <Progress className='h-1 absolute z-10 top-0 bg-transparent drop-shadow-blue' value={progress} />
     </div>
   );
 }
