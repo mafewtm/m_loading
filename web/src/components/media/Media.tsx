@@ -1,6 +1,5 @@
-import { useEffect, useState }from 'react'
+import { useEffect, useState } from 'react'
 import { Button } from '@/components/ui/button'
-
 import Sound from '../../assets/audio.mp3'
 import { Icon } from '@iconify/react';
 
