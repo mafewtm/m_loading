@@ -1,5 +1,5 @@
 import * as React from "react"
-import { ArrowLeftIcon, ArrowRightIcon } from "@radix-ui/react-icons"
+import { Icon } from "@iconify/react"
 import useEmblaCarousel, {
   type UseEmblaCarouselType,
 } from "embla-carousel-react"
@@ -214,7 +214,7 @@ const CarouselPrevious = React.forwardRef<
       onClick={scrollPrev}
       {...props}
     >
-      <ArrowLeftIcon className="h-4 w-4" />
+      <Icon icon = "radix-icons:arrow-left" className="h-4 w-4" />
       <span className="sr-only">Previous slide</span>
     </Button>
   )
@@ -243,7 +243,7 @@ const CarouselNext = React.forwardRef<
       onClick={scrollNext}
       {...props}
     >
-      <ArrowRightIcon className="h-4 w-4" />
+      <Icon icon = "radix-icons:arrow-right" className="h-4 w-4" />
       <span className="sr-only">Next slide</span>
     </Button>
   )
