@@ -26,6 +26,7 @@ export default function Media() {
       <Carousel
         className='flex-1'
         plugins = {[autoplay.current]}
+        opts={{ loop: true }}
       >
         <CarouselContent>
           {slides}
